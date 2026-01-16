@@ -1,1 +1,50 @@
-GPT/LLMs-from-scratch/
+# -------------------------
+# Python & Virtual Environments
+# -------------------------
+
+# not to commmit
+GPT/LLMs-from-scratch
+GPT/MRuntime.ps1
+# Common virtual environment folders
+venv/
+.venv/
+env/
+ENV/
+venv.bak/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# -------------------------
+# Jupyter Notebook
+# -------------------------
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter runtime files
+.jupyter/
+.local/share/jupyter/
+runtime/
+
+# Automatically generated notebook files
+*.nbconvert.ipynb
+
+# -------------------------
+# OS-specific crap
+# -------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
