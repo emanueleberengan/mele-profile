@@ -2,9 +2,6 @@
 # Python & Virtual Environments
 # -------------------------
 
-# not to commmit
-GPT/LLMs-from-scratch
-GPT/MRuntime.ps1
 # Common virtual environment folders
 venv/
 .venv/
