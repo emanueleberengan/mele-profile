@@ -1,10 +1,11 @@
 import torch
+import tiktoken
 from torch import nn
 from torch.utils.data import Dataset, DataLoader
 
 GPT_CONFIG_124M = {
     "vocab_size": 50257,
-    "context_length": 1024,
+    "context_length": 256,
     "emb_dim": 768,
     "n_heads": 12,
     "n_layers": 12,
@@ -189,9 +190,7 @@ class GPTDatasetV1(Dataset):
         self.input_ids = []
         self.target_ids = []
 
-        # Modification
-        # token_ids = tokenizer.encode(txt, allowed_special={"<|endoftext|>"})
-        token_ids = [int(i) for i in txt.strip().split()]
+        token_ids = tokenizer.encode(txt, allowed_special={"<|endoftext|>"})
 
         # Use a sliding window to chunk the book into overlapping sequences of max_length
         for i in range(0, len(token_ids) - max_length, stride):
@@ -209,9 +208,8 @@ class GPTDatasetV1(Dataset):
 def create_dataloader_v1(txt, batch_size=4, max_length=256, stride=128, shuffle=True, drop_last=True, num_workers=0):
 
     # Initialize the tokenizer
-    # tokenizer = tiktoken.get_encoding("gpt2")
-    tokenizer = None
-
+    tokenizer = tiktoken.get_encoding("gpt2")
+    
     # Create dataset
     dataset = GPTDatasetV1(txt, tokenizer, max_length, stride)
 
