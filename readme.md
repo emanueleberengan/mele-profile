@@ -8,8 +8,8 @@ You’ll find learning notebooks, hands‑on LLM/GPT experiments, and a short pr
 
 ## Quick links
 
-- ➡️ **Profile** — background, CV‑style info, and contacts: **[profile/README.md*
-- 🤖 **GPT** — GPT‑style training notebooks and AI experiments: **GPT/**
+- ➡️ **Profile** — background, CV‑style info, and contacts: [profile/readme.md](profile/readme.md)
+- 🤖 **GPT** — GPT‑style training notebooks and AI experiments: [GPT/](GPT/readme.md)
 
 ---
 
@@ -20,7 +20,7 @@ You’ll find learning notebooks, hands‑on LLM/GPT experiments, and a short pr
 - **Selected projects** with brief context and outcomes.
 - **Contact** details.
 
-👉 Open: **[rofile/README.md**
+👉 Open: **[profile/README.md]**(profile/README.md)
 
 ---
 
@@ -44,8 +44,6 @@ A practical sandbox for Large Language Models, focused on **training from scratc
 
 👉 Open the folder: **GPT/**
 
-<details>
-  <summary>Why no repository tree here?</summary>
 
 Large code blocks with ASCII trees can overflow and hurt readability on small screens.  
 This README keeps sections short and links directly to folders instead.
