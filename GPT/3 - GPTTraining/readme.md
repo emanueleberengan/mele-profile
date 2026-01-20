@@ -1,7 +1,12 @@
 
 ## 🍐 vs 🍎 — Simple GPT Training on a Tiny Dataset
 
-This notebook demonstrates how to train a GPT‑style language model **from scratch** using a very small text corpus.  
+The notebooks contained in this section demonstrates how to train a GPT‑style language model **from scratch** using a very small text corpus.  
+
+To get the most on this content follow the order of Jupiter books:
+ - 🥇[intro-training.ipynb](intro-training.ipynb): Text to tokens and back, generate from randoms and loss calculation 
+ - 🥈[training.ipynb](training.ipynb): Train the model on a simple dataset
+
 The workflow includes:
 
 - loading and tokenizing text with the GPT‑2 tokenizer  
@@ -13,9 +18,7 @@ The workflow includes:
 - generating short text samples after each epoch  
 
 Because the dataset is intentionally tiny, the model quickly **overfits**:  
-training loss continues improving while test loss plateaus around epoch 3.  
-This provides a clear illustration of the generalization limits of GPT‑style models when trained on insufficient data.
+  
+  > training loss continues improving while test loss plateaus around epoch 3.  
+  > This provides a clear illustration of the generalization limits of GPT‑style models when trained on insufficient data.
 
-After each epoch, the model generates text from the prompt:
-
-``
