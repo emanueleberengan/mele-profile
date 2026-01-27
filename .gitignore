@@ -46,3 +46,5 @@ runtime/
 # Windows
 Thumbs.db
 GPT/3 - GPTTraining/the-verdict.pth
+GPT/5 - ClassificationFT/gpt2
+GPT/4 - GPT2Import/gpt2
