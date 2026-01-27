@@ -26,27 +26,10 @@ You’ll find learning notebooks, hands‑on LLM/GPT experiments, and a short pr
 
 ## What’s in `/GPT`
 
-A practical sandbox for Large Language Models, focused on **training from scratch** and understanding learning dynamics on small corpora.
-
-**Table of contents (TOC):**
-- **`intro-training.ipynb`** — first principles:
-  - loading text & GPT‑2 tokenization  
-  - 90/10 train–test split  
-  - dataloaders for next‑token prediction  
-  - cross‑entropy loss  
-  - a minimal training loop
-- **`training.ipynb`** — deeper dive:
-  - AdamW loop with periodic evaluation  
-  - tracking training vs test loss  
-  - controlled **overfitting** on a tiny dataset  
-  - text generation samples  
-  - loss curve visualization
+A practical sandbox for Large Language Models, focused on **training from scratch** and understanding learning dynamics on small corpora inspired by exercises suggested in the book: Build A Large Language Model (From Scratch), Published by Manning, ISBN 978-1633437166
 
 👉 Open the folder: **GPT/**
 
-
-Large code blocks with ASCII trees can overflow and hurt readability on small screens.  
-This README keeps sections short and links directly to folders instead.
 </details>
 
 ---
